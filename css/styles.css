@@ -1,0 +1,106 @@
+body {
+  margin: 0%;
+}
+
+hr {
+  border-top: 4px dotted #e3f6f5;
+  border-bottom: none;
+  width: 30%;
+}
+
+.primaryDiv {
+  background-color: #272343;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+.secondaryDiv {
+  background-color: #ffffff;
+  height: 300px;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+.thirdDiv {
+  background-color: #e3f6f5;
+  height: 300px;
+  padding-top: 1%;
+  padding-bottom: 3%;
+}
+
+.profileImage {
+  width: 20%;
+  height: 20%;
+}
+
+.smallText {
+  font-family: fantasy;
+  color: #ffffff;
+}
+
+.bigText {
+  font-family: fantasy;
+  color: #bae8e8;
+  margin-block-start: 0%;
+}
+
+.tab {
+  overflow: hidden;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: solid #272343;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.1s;
+  text-decoration-color: #ffffff;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  font-weight: bold;
+  background-color: inherit;
+  border-bottom: solid #79b4b7;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #e3f6f5;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+.fa {
+  size: 2%;
+  padding: 2%;
+  font-size: 5%;
+  width: 3%;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-github {
+  background: #333;
+  color: white;
+}
+
+/* Twitter */
+.fa-linkedin {
+  background: #4078c0;
+  color: white;
+}
