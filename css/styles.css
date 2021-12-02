@@ -1,5 +1,6 @@
 body {
   margin: 0%;
+  font-family: "Merriweather", serif;
 }
 
 hr {
@@ -14,18 +15,29 @@ hr {
   padding-bottom: 3%;
 }
 
+.circleDiv {
+  position: absolute;
+  right: -200px;
+  bottom: -200px;
+  width: 400px;
+  height: 400px;
+  background-color: #bae8e8;
+  border-radius: 100%;
+}
+
 .secondaryDiv {
+  position: relative;
   background-color: #ffffff;
-  height: 300px;
+  height: 500px;
   padding-top: 1%;
   padding-bottom: 3%;
 }
 
 .thirdDiv {
   background-color: #e3f6f5;
-  height: 300px;
-  padding-top: 1%;
-  padding-bottom: 3%;
+  height: 100px;
+  padding-top: 3%;
+  padding-bottom: 1%;
 }
 
 .profileImage {
@@ -33,19 +45,109 @@ hr {
   height: 20%;
 }
 
+.iconImage {
+  width: 70px;
+  height: 70px;
+}
+
 .smallText {
-  font-family: fantasy;
   color: #ffffff;
+  font-family: "Montserrat", serif;
+  margin: 0;
 }
 
 .bigText {
-  font-family: fantasy;
   color: #bae8e8;
   margin-block-start: 0%;
+  margin: 0;
+  font-size: 4rem;
+  font-family: "Sacramento", serif;
+}
+
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #272343;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
 }
 
 .tab {
   overflow: hidden;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: #bae8e8;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Style the buttons that are used to open the tab content */

@@ -1,0 +1,9 @@
+- In CSS, relative positioning referes to the layout for the 
+    component(child layout) whereas absolute refers to the layout surrounding the component(space
+    relative to the parent).
+- cssfontstack.com is a website useful to view all the currently used fonts and their 
+    usage rates for Windows and Mac
+
+- loremipsumgenerator.com for generating placeholder text content
+- flaticon.com is a good source for icons
+- giphy.com for gifs, stickers have a transparent background
