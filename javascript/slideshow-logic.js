@@ -13,7 +13,7 @@ function currentSlide(n) {
 
 function showSlides(n) {
   var i;
-  var slides = document.getElementsByClassName("mySlides");
+  var slides = document.getElementsByClassName("skillSlides");
   var dots = document.getElementsByClassName("dot");
   if (n > slides.length) {
     slideIndex = n;
@@ -33,4 +33,25 @@ function showSlides(n) {
   console.log(slideIndex);
   slides[slideIndex].style.display = "block";
   dots[slideIndex].className += " active";
+}
+var canShow = false;
+showDialog(canShow);
+
+function aboutMePressed() {
+  if (canShow) {
+    canShow = false;
+    showDialog(false);
+  } else {
+    canShow = true;
+    showDialog(true);
+  }
+}
+
+function showDialog(canShow) {
+  var dialog = document.getElementsByClassName("dialogDiv")[0];
+  if (canShow) {
+    dialog.style.display = "block";
+  } else {
+    dialog.style.display = "none";
+  }
 }

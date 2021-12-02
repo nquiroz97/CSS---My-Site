@@ -1,6 +1,8 @@
 body {
   margin: 0%;
   font-family: "Merriweather", serif;
+  text-align: center;
+  height: 100%;
 }
 
 hr {
@@ -9,26 +11,77 @@ hr {
   width: 30%;
 }
 
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  position: relative;
+  float: left;
+  width: 35%;
+}
+
 .primaryDiv {
+  height: 100%;
   background-color: #272343;
   padding-top: 1%;
   padding-bottom: 3%;
 }
 
-.circleDiv {
+.dialogText {
   position: absolute;
-  right: -200px;
-  bottom: -200px;
-  width: 400px;
-  height: 400px;
+  top: 50%;
+  word-wrap: break-word;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.dialogHeader {
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  right: 30%;
+}
+
+.dialogDiv {
+  text-align: center;
+  position: absolute;
+  padding-top: 2%;
+  right: 10px;
+  top: 10%;
+  width: 33%;
+  height: 50%;
   background-color: #bae8e8;
   border-radius: 100%;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 10px; /* 5px rounded corners */
+}
+.exitButton {
+  font-size: large;
+  border: none;
+  text-align: center;
+  position: absolute;
+  top: 4%;
+  right: 7%;
+  width: 15%;
+  height: 15%;
+  background-color: #c8cece;
+  border-radius: 100%;
+}
+
+.exitButton:hover {
+  background-color: #717171;
+}
+
 .secondaryDiv {
-  position: relative;
   background-color: #ffffff;
-  height: 500px;
   padding-top: 1%;
   padding-bottom: 3%;
 }
@@ -46,6 +99,7 @@ hr {
 }
 
 .iconImage {
+  float: inline-start;
   width: 70px;
   height: 70px;
 }
@@ -53,7 +107,40 @@ hr {
 .smallText {
   color: #ffffff;
   font-family: "Montserrat", serif;
+  font-weight: normal;
   margin: 0;
+}
+
+.footerText {
+  color: #272343;
+  font-family: "Montserrat", serif;
+  font-weight: normal;
+  margin: 1rem;
+}
+.cardText {
+  color: #818686;
+  margin-block-start: 0%;
+  margin: 0;
+  font-size: 0.9rem;
+  font-weight: lighter;
+  font-family: "Montserrat", serif;
+}
+
+.sectionText {
+  color: #66bfbf;
+  margin-block-start: 0%;
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+  font-family: "Montserrat", serif;
+}
+
+.mediumText {
+  color: #66bfbf;
+  margin-block-start: 0%;
+  margin: 0;
+  font-size: 2rem;
+  font-family: "Montserrat", serif;
 }
 
 .bigText {
@@ -64,7 +151,13 @@ hr {
   font-family: "Sacramento", serif;
 }
 
-.mySlides {
+.skillSlides {
+  margin: 4rem;
+  display: none;
+}
+
+.workSlides {
+  margin: 4rem;
   display: none;
 }
 
@@ -203,4 +296,29 @@ hr {
 .fa-linkedin {
   background: #4078c0;
   color: white;
+}
+
+.icon-bar {
+  float: right;
+  padding: 2%;
+  width: 60%; /* Full-width */ /* Dark-grey background */
+  overflow: auto; /* Overflow due to float */
+}
+
+.icon-bar a {
+  padding: 2%;
+  float: left;
+  text-align: center; /* Float links side by side */
+  width: 13%; /* Equal width (5 icons with 20% width each = 100%) */
+  transition: all 0.3s ease; /* Add transition for hover effects */
+  border-radius: 100%;
+  font-size: 36px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+  background-color: #000; /* Add a hover color */
+}
+
+.active-icon {
+  background-color: #04aa6d; /* Add an active/current color */
 }

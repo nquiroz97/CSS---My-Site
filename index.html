@@ -19,94 +19,82 @@
     />
   </head>
   <div class="tab primaryDiv">
-    <button class="tablinks smallText" onclick="openCity(event, 'London')">
-      About
+    <button class="tablinks smallText" onclick="aboutMePressed()">
+      About me
     </button>
     <button class="tablinks smallText" onclick="openCity(event, 'Paris')">
       Contact me
     </button>
   </div>
-  <center>
-    <body>
-      <div class="primaryDiv">
-        <img
-          src="images/profile-modified.png"
-          alt="profile image"
-          class="profileImage"
-        />
-        <h1 class="bigText">Hi, I'm Neri</h1>
-        <p class="smallText">Mobile and Web Developer</p>
-        <hr />
-      </div>
-      <div class="secondaryDiv">
-        <div class="skills">
-          <h2>My Skills.</h2>
-          <div class="mySlides fade">
-            <tr>
-              <td>
-                <img
-                  class="iconImage"
-                  src="https://cdn-icons.flaticon.com/png/512/278/premium/278157.png?token=exp=1638384873~hmac=ac2fd184854b9db529f20f4f75feb870"
-                />
-              </td>
-              <td>
-                <h3>Android Development</h3>
-              </td>
-            </tr>
+  <div class="dialogDiv fade">
+    <button class="exitButton" onclick="aboutMePressed()">X</button>
+    <h2 class="sectionText dialogHeader">Hi, I'm Neri.</h2>
+    <p class="dialogText">
+      I love programming and development as well as talking sports. Feel free to
+      get in touch or take a look at my past work below.
+    </p>
+  </div>
+  <body>
+    <div class="primaryDiv">
+      <img
+        src="images/profile-modified.png"
+        alt="profile image"
+        class="profileImage"
+      />
+      <h1 class="bigText">Neri Quiroz-Cabrera</h1>
+      <p class="smallText">Sports Enthusiast, Mobile & Web Developer</p>
+      <hr />
+    </div>
+    <div class="secondaryDiv">
+      <div class="row">
+        <div class="column">
+          <h2 class="mediumText">My Skills.</h2>
+          <div class="skillSlides fade">
+            <img
+              class="iconImage"
+              src="https://cdn-icons.flaticon.com/png/512/278/premium/278157.png?token=exp=1638384873~hmac=ac2fd184854b9db529f20f4f75feb870"
+            />
+            <h3 class="sectionText">Android Development</h3>
             <br />
             <hr />
             <h3>Languages</h3>
             <p>Kotlin and Java</p>
           </div>
 
-          <div class="mySlides fade">
-            <tr>
-              <td>
-                <img
-                  class="iconImage"
-                  src="https://cdn-icons-png.flaticon.com/512/831/831276.png"
-                />
-              </td>
-              <td>
-                <h3>iOS Development</h3>
-              </td>
-            </tr>
+          <div class="skillSlides fade">
+            <img
+              class="iconImage"
+              src="https://cdn-icons-png.flaticon.com/512/831/831276.png"
+            />
+            <h3 class="sectionText">iOS Development</h3>
             <br />
             <hr />
             <h3>Language</h3>
             <p>Swift</p>
           </div>
 
-          <div class="mySlides fade">
-            <tr>
-              <td>
-                <img
-                  class="iconImage"
-                  src="https://www.fandysoft.com/wp-content/uploads/2017/09/catalog-widget-placeholder.png"
-                />
-              </td>
-              <td>
-                <h3>Flutter Development</h3>
-              </td>
-            </tr>
+          <div class="skillSlides fade">
+            <img
+              class="iconImage"
+              src="https://www.fandysoft.com/wp-content/uploads/2017/09/catalog-widget-placeholder.png"
+            />
+
+            <h3 class="sectionText">Flutter Development</h3>
+
             <br />
             <hr />
             <h3>Language</h3>
             <p>Dart</p>
           </div>
 
-          <div class="mySlides fade">
-            <tr>
-              <td>
-                <img
-                  class="iconImage"
-                  src="https://cdn-icons.flaticon.com/png/512/1048/premium/1048150.png?token=exp=1638411554~hmac=29be2c7425cfa7ee8d62d06e6092b116"
-                />
-              </td>
-              <td>
-                <h3>Web Development</h3>
-              </td>
-            </tr>
+          <div class="skillSlides fade">
+            <img
+              class="iconImage"
+              src="https://cdn-icons.flaticon.com/png/512/1048/premium/1048150.png?token=exp=1638411554~hmac=29be2c7425cfa7ee8d62d06e6092b116"
+            />
+
+            <h3 class="sectionText">Web Development</h3>
+
             <br />
             <hr />
             <h3>Languages</h3>
@@ -114,31 +102,127 @@
             <h3>Framework</h3>
             <p>React</p>
           </div>
+          <!-- The dots/circles -->
+          <div style="text-align: center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+          </div>
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
         </div>
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <div class="column" style="width: 65%">
+          <h2 class="mediumText" style="text-align: center;">My Work.</h2>
+          <div class="row" style="margin-left: 5%; margin-top: 1%; margin-bottom: 6%;">
+            <div class="column">
+              <div
+                class="card"
+                style="
+                  padding: 5%;
+                  width: 50%;
+                  background: linear-gradient(
+                    to bottom right,
+                    #ccffff 0%,
+                    #3399ff 100%
+                  );
+                "
+              >
+                <div>
+                  <h4><b>MDQleaners</b></h4>
+                  <img
+                    src="images/logo_transparent.png"
+                    alt="profile image"
+                    class="profileImage"
+                  />
+                  <p class="cardText">
+                    MDQleaners is a Flutter mobile app made for a local carpet
+                    cleaning business. Handles things such as user
+                    authentication and real time data that allows for a pleasant
+                    customer experience. This is part of my first project as a
+                    freelancer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column" style="margin-left: 22%; position: absolute;">
+              <div
+                class="card"
+                style="
+                  padding: 5%;
+                  width: 50%;
+                  background: linear-gradient(
+                    to bottom right,
+                    #ccffff 0%,
+                    #3399ff 100%
+                  );
+                "
+              >
+                <div>
+                  <h4><b>MDQleaners Hub</b></h4>
+                  <img
+                    src="images/logo_transparent.png"
+                    alt="profile image"
+                    class="profileImage"
+                  />
+                  <p class="cardText">
+                    MDQleaners Hub is a Flutter mobile app made for a local
+                    carpet cleaning business. This will be used by employees
+                    only. Handles things such as user authentication and real
+                    time data that allows for responding to customer requests in
+                    a timely and organized manner. This is part of my first
+                    project as a freelancer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="column" style="position: absolute; margin-left: 44%;">
+              <div
+                class="card"
+                style="
+                  padding: 5%;
+                  width: 50%;
+                  background: linear-gradient(
+                    to bottom left,
+                    #ff9933 0%,
+                    #ffcc66 100%
+                  );
+                "
+              >
+                <div>
+                  <h4><b>MDQleaners.com</b></h4>
+                  <img
+                    src="images/logo_transparent.png"
+                    alt="profile image"
+                    class="profileImage"
+                  />
+                  <p class="cardText">
+                    MDQleaners.com is an informational website made for a local carpet
+                    cleaning business. Made using React. This is part of my first project as a
+                    freelancer.
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+          <br />
+        </div>
       </div>
-      <!-- The dots/circles -->
-      <div style="text-align: center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-      </div>
-      <div class="thirdDiv">
-        <td>
-          <a
-            href="https://www.linkedin.com/in/neri-quiroz-21-c/"
-            class="fa fa-linkedin"
-          ></a>
-        </td>
-        <td>
-          <a href="https://github.com/nquiroz97" class="fa fa-github"></a>
-        </td>
-        <p>© Neri Quiroz</p>
-      </div>
-    </body>
-  </center>
+    </div>
+    <div class="thirdDiv">
+      <td>
+        <a
+          href="https://www.linkedin.com/in/neri-quiroz-21-c/"
+          class="fa fa-linkedin"
+        ></a>
+      </td>
+      <td>
+        <a href="https://github.com/nquiroz97" class="fa fa-github"></a>
+      </td>
+      <p class="footerText">© 2021 Neri Quiroz</p>
+    </div>
+  </body>
 </html>
 <script type="text/javascript" src="javascript/slideshow-logic.js"></script>
