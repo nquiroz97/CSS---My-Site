@@ -7,3 +7,4 @@
 - loremipsumgenerator.com for generating placeholder text content
 - flaticon.com is a good source for icons
 - giphy.com for gifs, stickers have a transparent background
+- css3buttongenerator.com
